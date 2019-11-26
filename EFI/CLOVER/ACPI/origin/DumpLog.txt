@@ -1,0 +1,114 @@
+16:787  12:694  Found UEFI Acpi 2.0 RSDP at 4FD0D014
+16:787  0:000  Saving ACPI tables from RSDP 4FD0D014 to EFI\CLOVER\ACPI\origin ...
+16:787  0:000   4FD0D014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+16:791  0:004    (Xsdt: 4FCF0188, Rsdt: 4FCF00C4)
+16:791  0:000    4FCF0188: 'XSDT', 'CB-01', Rev: 1, Len: 252 -> XSDT.aml
+16:794  0:002    4FCF00C4: 'RSDT', 'CB-01', Rev: 1, Len: 144 -> RSDT.aml
+16:796  0:002    Tables in Xsdt: 27
+16:796  0:000    0. 4FCF2000: 'FACP', 'CB-01', Rev: 5, Len: 268 -> FACP.aml
+16:799  0:002        (Dsdt: 4FCAD000, Facs: 4FC0D000, XDsdt: 4FCAD000, XFacs: 0)
+16:799  0:000        4FCAD000: 'DSDT', 'CB-01', Rev: 2, Len: 264713 -> DSDT.aml
+16:806  0:006        4FC0D000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+16:808  0:002    1. 4FD0C000: 'UEFI', 'CB-01', Rev: 1, Len: 566 -> UEFI.aml
+16:811  0:002    2. 4FD0B000: 'SSDT', 'CB-01', Rev: 2, Len: 230 -> SSDT-0-CB-01.aml
+16:815  0:003    3. 4FD09000: 'SSDT', 'CB-01', Rev: 2, Len: 7007 -> SSDT-1-CB-01.aml (Found hidden SSDT 9 pcs)
+16:818  0:002        * 4EF09018: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1409  53 53 44 54 81 05 00 00 02 42 50 6D 52 65 66 00 Internal length = 1409 -> SSDT-x1_0-Cpu0Ist.aml
+16:823  0:005        * 4EF09698: 'SSDT', 'ApIst', Rev: 2, Len: 1532  53 53 44 54 FC 05 00 00 02 29 50 6D 52 65 66 00 Internal length = 1532 -> SSDT-x1_1-ApIst.aml
+16:825  0:002        * 4EF06018: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1024  53 53 44 54 00 04 00 00 02 DF 50 6D 52 65 66 00 Internal length = 1024 -> SSDT-x1_2-Cpu0Cst.aml
+16:828  0:002        * 4EF08A98: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 EF 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x1_3-ApCst.aml
+16:831  0:002        * 4EF09D18: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 329  53 53 44 54 49 01 00 00 02 57 50 6D 52 65 66 00 Internal length = 329 -> SSDT-x1_4-Cpu0Hwp.aml
+16:834  0:003        * 4EF06698: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 E9 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x1_5-ApHwp.aml
+16:836  0:002        * 4EF08018: 'SSDT', 'HwpLvt', Rev: 2, Len: 1828  53 53 44 54 24 07 00 00 02 D0 50 6D 52 65 66 00 Internal length = 1828 -> SSDT-x1_6-HwpLvt.aml
+16:839  0:002        * 4F0E4818: 'SSDT', 'Cpu0Psd', Rev: 2, Len: 244  53 53 44 54 F4 00 00 00 02 3D 50 6D 52 65 66 00 Internal length = 244 -> SSDT-x1_7-Cpu0Psd.aml
+16:842  0:002        * 4EF07018: 'SSDT', 'ApPsd', Rev: 2, Len: 2736  53 53 44 54 B0 0A 00 00 02 B1 50 6D 52 65 66 00 Internal length = 2736 -> SSDT-x1_8-ApPsd.aml
+16:845  0:002  
+16:845  0:000    4. 4FD05000: 'SSDT', 'CB-01', Rev: 2, Len: 12742 -> SSDT-2-CB-01.aml
+16:848  0:003    5. 4FD04000: 'UEFI', 'CB-01', Rev: 1, Len: 66 -> UEFI.aml
+16:851  0:002    6. 4FD03000: 'SSDT', 'CB-01', Rev: 2, Len: 1114 -> SSDT-3-CB-01.aml
+16:854  0:002    7. 4FD02000: 'SSDT', 'CB-01', Rev: 2, Len: 70 -> SSDT-4-CB-01.aml
+16:856  0:002    8. 4FD01000: 'TPM2', 'CB-01', Rev: 3, Len: 52 -> TPM2.aml
+16:859  0:002    9. 4FD00000: 'MSDM', 'CB-01', Rev: 3, Len: 85 -> MSDM.aml
+16:862  0:002    10. 4FCFC000: 'SSDT', 'CB-01', Rev: 2, Len: 16384 -> SSDT-5-CB-01.aml
+16:865  0:002    11. 4FCFB000: 'LPIT', 'CB-01', Rev: 1, Len: 148 -> LPIT.aml
+16:868  0:002    12. 4FCFA000: 'WSMT', 'CB-01', Rev: 1, Len: 40 -> WSMT.aml
+16:870  0:002    13. 4FCF9000: 'SSDT', 'CB-01', Rev: 2, Len: 3119 -> SSDT-6-CB-01.aml
+16:874  0:003    14. 4FCF7000: 'SSDT', 'CB-01', Rev: 2, Len: 5295 -> SSDT-7-CB-01.aml
+16:876  0:002    15. 4FCF6000: 'DBGP', 'CB-01', Rev: 1, Len: 52 -> DBGP.aml
+16:879  0:002    16. 4FCF5000: 'DBG2', 'CB-01', Rev: 0, Len: 84 -> DBG2.aml
+16:882  0:002    17. 4FCF4000: 'SSDT', 'CB-01', Rev: 2, Len: 3968 -> SSDT-8-CB-01.aml
+16:884  0:002    18. 4FCF3000: 'ASF!', 'CB-01', Rev: 32, Len: 165 -> ASF!.aml
+16:887  0:002    19. 4FCF1000: 'HPET', 'CB-01', Rev: 1, Len: 56 -> HPET.aml
+16:890  0:003    20. 4FCEF000: 'APIC', 'CB-01', Rev: 3, Len: 300 -> APIC.aml
+16:893  0:002    21. 4FCEE000: 'MCFG', 'CB-01', Rev: 1, Len: 60 -> MCFG.aml
+16:896  0:002    22. 4FCAB000: 'SSDT', 'CB-01', Rev: 2, Len: 6173 -> SSDT-9-CB-01.aml
+16:899  0:003    23. 4FCA9000: 'NHLT', 'CB-01', Rev: 0, Len: 45 -> NHLT.aml
+16:902  0:002    24. 4FCAA000: 'DMAR', 'CB-01', Rev: 1, Len: 168 -> DMAR.aml
+16:905  0:002    25. 4FCA8000: 'FPDT', 'CB-01', Rev: 1, Len: 68 -> FPDT.aml
+16:908  0:003    26. 4FCA7000: 'BGRT', 'CB-01', Rev: 1, Len: 56 -> BGRT.aml
+16:911  0:002    Tables in Rsdt: 27
+16:911  0:000    0. 4FCF2000: 'FACP', 'CB-01', Rev: 5, Len: 268
+16:911  0:000        (Dsdt: 4FCAD000, Facs: 4FC0D000, XDsdt: 4FCAD000, XFacs: 0)
+16:911  0:000        4FCAD000: 'DSDT', 'CB-01', Rev: 2, Len: 264713
+16:914  0:002        4FC0D000: 'FACS', Ver: 2, Len: 64
+16:914  0:000    1. 4FD0C000: 'UEFI', 'CB-01', Rev: 1, Len: 566
+16:914  0:000    2. 4FD0B000: 'SSDT', 'CB-01', Rev: 2, Len: 230
+16:914  0:000    3. 4FD09000: 'SSDT', 'CB-01', Rev: 2, Len: 7007
+16:914  0:000    4. 4FD05000: 'SSDT', 'CB-01', Rev: 2, Len: 12742
+16:914  0:000    5. 4FD04000: 'UEFI', 'CB-01', Rev: 1, Len: 66
+16:914  0:000    6. 4FD03000: 'SSDT', 'CB-01', Rev: 2, Len: 1114
+16:914  0:000    7. 4FD02000: 'SSDT', 'CB-01', Rev: 2, Len: 70
+16:914  0:000    8. 4FD01000: 'TPM2', 'CB-01', Rev: 3, Len: 52
+16:914  0:000    9. 4FD00000: 'MSDM', 'CB-01', Rev: 3, Len: 85
+16:914  0:000    10. 4FCFC000: 'SSDT', 'CB-01', Rev: 2, Len: 16384
+16:914  0:000    11. 4FCFB000: 'LPIT', 'CB-01', Rev: 1, Len: 148
+16:914  0:000    12. 4FCFA000: 'WSMT', 'CB-01', Rev: 1, Len: 40
+16:914  0:000    13. 4FCF9000: 'SSDT', 'CB-01', Rev: 2, Len: 3119
+16:914  0:000    14. 4FCF7000: 'SSDT', 'CB-01', Rev: 2, Len: 5295
+16:914  0:000    15. 4FCF6000: 'DBGP', 'CB-01', Rev: 1, Len: 52
+16:914  0:000    16. 4FCF5000: 'DBG2', 'CB-01', Rev: 0, Len: 84
+16:914  0:000    17. 4FCF4000: 'SSDT', 'CB-01', Rev: 2, Len: 3968
+16:914  0:000    18. 4FCF3000: 'ASF!', 'CB-01', Rev: 32, Len: 165
+16:914  0:000    19. 4FCF1000: 'HPET', 'CB-01', Rev: 1, Len: 56
+16:914  0:000    20. 4FCEF000: 'APIC', 'CB-01', Rev: 3, Len: 300
+16:914  0:000    21. 4FCEE000: 'MCFG', 'CB-01', Rev: 1, Len: 60
+16:914  0:000    22. 4FCAB000: 'SSDT', 'CB-01', Rev: 2, Len: 6173
+16:914  0:000    23. 4FCA9000: 'NHLT', 'CB-01', Rev: 0, Len: 45
+16:914  0:000    24. 4FCAA000: 'DMAR', 'CB-01', Rev: 1, Len: 168
+16:914  0:000    25. 4FCA8000: 'FPDT', 'CB-01', Rev: 1, Len: 68
+16:914  0:000    26. 4FCA7000: 'BGRT', 'CB-01', Rev: 1, Len: 56
+16:914  0:000  Found UEFI Acpi 1.0 RSDP at 4FD0D000
+16:914  0:000  Printing ACPI tables from RSDP 4FD0D000 ...
+16:914  0:000   4FD0D000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+16:914  0:000    (Rsdt: 4FCF0000)
+16:914  0:000    4FCF0000: 'RSDT', 'CB-01', Rev: 1, Len: 144
+16:914  0:000    Tables in Rsdt: 27
+16:914  0:000    0. 4FCF2000: 'FACP', 'CB-01', Rev: 5, Len: 268
+16:914  0:000        (Dsdt: 4FCAD000, Facs: 4FC0D000, XDsdt: 4FCAD000, XFacs: 0)
+16:914  0:000        4FCAD000: 'DSDT', 'CB-01', Rev: 2, Len: 264713
+16:917  0:002        4FC0D000: 'FACS', Ver: 2, Len: 64
+16:917  0:000    1. 4FD0C000: 'UEFI', 'CB-01', Rev: 1, Len: 566
+16:917  0:000    2. 4FD0B000: 'SSDT', 'CB-01', Rev: 2, Len: 230
+16:917  0:000    3. 4FD09000: 'SSDT', 'CB-01', Rev: 2, Len: 7007
+16:917  0:000    4. 4FD05000: 'SSDT', 'CB-01', Rev: 2, Len: 12742
+16:917  0:000    5. 4FD04000: 'UEFI', 'CB-01', Rev: 1, Len: 66
+16:917  0:000    6. 4FD03000: 'SSDT', 'CB-01', Rev: 2, Len: 1114
+16:917  0:000    7. 4FD02000: 'SSDT', 'CB-01', Rev: 2, Len: 70
+16:917  0:000    8. 4FD01000: 'TPM2', 'CB-01', Rev: 3, Len: 52
+16:917  0:000    9. 4FD00000: 'MSDM', 'CB-01', Rev: 3, Len: 85
+16:917  0:000    10. 4FCFC000: 'SSDT', 'CB-01', Rev: 2, Len: 16384
+16:917  0:000    11. 4FCFB000: 'LPIT', 'CB-01', Rev: 1, Len: 148
+16:917  0:000    12. 4FCFA000: 'WSMT', 'CB-01', Rev: 1, Len: 40
+16:917  0:000    13. 4FCF9000: 'SSDT', 'CB-01', Rev: 2, Len: 3119
+16:917  0:000    14. 4FCF7000: 'SSDT', 'CB-01', Rev: 2, Len: 5295
+16:917  0:000    15. 4FCF6000: 'DBGP', 'CB-01', Rev: 1, Len: 52
+16:917  0:000    16. 4FCF5000: 'DBG2', 'CB-01', Rev: 0, Len: 84
+16:917  0:000    17. 4FCF4000: 'SSDT', 'CB-01', Rev: 2, Len: 3968
+16:917  0:000    18. 4FCF3000: 'ASF!', 'CB-01', Rev: 32, Len: 165
+16:917  0:000    19. 4FCF1000: 'HPET', 'CB-01', Rev: 1, Len: 56
+16:917  0:000    20. 4FCEF000: 'APIC', 'CB-01', Rev: 3, Len: 300
+16:917  0:000    21. 4FCEE000: 'MCFG', 'CB-01', Rev: 1, Len: 60
+16:917  0:000    22. 4FCAB000: 'SSDT', 'CB-01', Rev: 2, Len: 6173
+16:917  0:000    23. 4FCA9000: 'NHLT', 'CB-01', Rev: 0, Len: 45
+16:917  0:000    24. 4FCAA000: 'DMAR', 'CB-01', Rev: 1, Len: 168
+16:917  0:000    25. 4FCA8000: 'FPDT', 'CB-01', Rev: 1, Len: 68
+16:917  0:000    26. 4FCA7000: 'BGRT', 'CB-01', Rev: 1, Len: 56
