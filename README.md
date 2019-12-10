@@ -2,7 +2,7 @@
 
 **Y9000X hackintosh 黑苹果 efi**
 
-声卡和雷电转HDMI需要等待BIOS更新
+声卡和雷电转HDMI需要等待BIOS更新，官方论坛已经发起了调查，希望大家可以去投票[链接地址](https://club.lenovo.com.cn/thread-5672284-1-1.html)
 
 **TYPE-C转以太网卡转换器，需要在启动至clvoer时，方向键选择停止倒计时后插入，方可稳定工作，热拔插的情况下，以太网卡会很不稳定，时断时续**
 
