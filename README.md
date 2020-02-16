@@ -2,10 +2,8 @@
 
 **Y9000X hackintosh 黑苹果 efi**
 
-**将机型改为14,1，雷电转HDMI正常，感谢[@WangRicky](https://github.com/hx2nn)*
+**将机型改为14,1，雷电转HDMI正常，感谢[@WangRicky](https://github.com/hx2nn)**
 声卡和雷电转HDMI需要等待BIOS更新，官方论坛已经发起了有关外放和雷电的需求调研，希望大家可以去投票[链接地址](https://club.lenovo.com.cn/thread-5672284-1-1.html)
-
-**TYPE-C转以太网卡转换器，需要在启动至clvoer时，方向键选择停止倒计时后插入，方可稳定工作，热拔插的情况下，以太网卡会很不稳定，时断时续**
 
 **配置** 
 * 主板 HM370
@@ -16,7 +14,7 @@
 
 支持10.14
 
-10.15系统未测试
+10.15可正常升级
 
 * 按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的DW1820A蓝牙教程添加驱动
 * 添加了4k显示补丁，显存2048M，原生HiDPI显示
@@ -50,7 +48,7 @@
 * wifi 蓝牙 handoff airdrop
 * 触控板全手势支持
 * 电源管理 USB接口正常
-* 雷电接口可以正常接U盘，接type-c扩展坞以太网卡工作正常
+* type-c接口可以正常接U盘，接type-c扩展坞以太网卡、HDMI，DP工作正常
 
 # 不工作
 
@@ -60,10 +58,8 @@
 
 **扬声器**
 
-**雷电转接hdmi，dp 和 VGA**
+
 
 * 音频尝试了自制Applealc驱动，扬声器节点为0x17，路径为0x02>0x17，均确认无误，编译的applealc正常驱动，外放无声，网友反馈此机型除Windows外，Linux、macOS系统扬声器均无法正常工作。
-
-* 外接显示器刚需的朋友，~~建议使用AirPlay投屏设备，USB外接显示卡设备个人不推荐~~，网络环境对此影响非常大，而且无法使用HackinTool注入显示器EDID，现阶段建议使用USB外置显示卡,如果displaylink芯片不支持4k输出，外置显示器的HiDPI无法开启。
 
 
