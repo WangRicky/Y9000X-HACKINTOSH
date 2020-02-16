@@ -1,9 +1,21 @@
 # Y9000X-hackintosh
 
-**Y9000X hackintosh 黑苹果 efi**
+**Y9000X hackintosh 黑苹果 EFI**
+
+目前已更换`opencore`引导,版本号0.5.3，支持10.15.3
+
+**`config.plist`中的个人的机器三码信息已删除，需要自己生成后填入**
 
 **将机型改为14,1，雷电转HDMI正常，感谢[@hx2nn](https://github.com/hx2nn)**
+
 声卡和雷电转HDMI需要等待BIOS更新，官方论坛已经发起了有关外放和雷电的需求调研，希望大家可以去投票[链接地址](https://club.lenovo.com.cn/thread-5672284-1-1.html)
+
+* 按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的DW1820A蓝牙教程添加驱动
+* 添加了4k显示补丁，显存2048M，原生HiDPI显示
+* 去除了多余的驱动和patch
+* 加入了DW1820a的device property驱动，可以支持apple watch自动解锁 
+* 添加了屏蔽PM981a的patch
+* 添加了雷电接口补丁，type-c扩展坞以太网卡工作正常
 
 **配置** 
 * 主板 HM370
@@ -12,16 +24,8 @@
 * 硬盘：PM981a（黑苹果无解，自行添加了东芝RC500）
 * 网卡:intel AX200(黑苹果无解，已更换DW1820A) 
 
-支持10.14
 
-10.15可正常升级
 
-* 按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的DW1820A蓝牙教程添加驱动
-* 添加了4k显示补丁，显存2048M，原生HiDPI显示
-* 去除了多余的驱动和patch
-* 加入了DW1820a的device property驱动，可以支持apple watch自动解锁 
-* 添加了屏蔽PM981a的patch
-* 添加了雷电接口补丁，type-c扩展坞以太网卡工作正常
 
 
 
