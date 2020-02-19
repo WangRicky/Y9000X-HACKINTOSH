@@ -2,13 +2,14 @@
 
 **Y9000X hackintosh 黑苹果 EFI**
 
-目前已更换`opencore`引导,版本号0.5.3，支持10.15.3
+目前已更换`opencore`引导,版本号0.5.5，支持10.15.3
 
 **`config.plist`中的个人的机器三码信息已删除，需要自己生成后填入**
 
 **将机型改为14,1，雷电转HDMI正常，感谢[@hx2nn](https://github.com/hx2nn)**
 
 声卡和雷电转HDMI需要等待BIOS更新，官方论坛已经发起了有关外放和雷电的需求调研，希望大家可以去投票[链接地址](https://club.lenovo.com.cn/thread-5672284-1-1.html)
+
 
 * 按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的DW1820A蓝牙教程添加驱动
 * 添加了4k显示补丁，显存2048M，原生HiDPI显示
