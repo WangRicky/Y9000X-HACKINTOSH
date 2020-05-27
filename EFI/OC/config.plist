@@ -623,6 +623,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,3</string>
+				<key>alc-delay</key>
+				<integer>500</integer>
 				<key>device-id</key>
 				<data>cKEAAA==</data>
 				<key>device_type</key>
