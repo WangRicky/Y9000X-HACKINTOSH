@@ -1,26 +1,34 @@
 # Y9000X-hackintosh
 
 **Y9000X hackintosh 黑苹果 EFI**
+
+目前已更新10.15.5，`opencore`引导版本号0.5.7
+
+CFG LOCK已解锁，本人配置CFG LOCKCFG Lock的offset为0x3E,需要修改SaSetup和CPUSetup中对应值，改完后Hackintool显示CFG Lock已解锁。
+
+可按照[此教程进行操作](http://bbs.pcbeta.com/viewthread-1845189-1-1.html)
+
+**修改BIOS ROM有风险，请谨慎操作**
+
+目前的config.plist是按照CFG LOCK解锁后配置的，如未解锁，请设置`AppleCpuPmCfgLock`和`AppleXcpmCfgLock`为true（之前升级oc到0.5.7的时候这两个选项错误的设置为了`false`,但使用起来确没发现有影响，个人也不清楚具体原因，如有网友知道原理的，请不吝赐教）
+
 **新增ALC声卡驱动延迟加载参数，解决时声卡可能不可用问题**
+
 ~~最新版的触控板驱动有问题，导致触控板无法使用，已回退，本机测试可正常使用~~
+
 **已更新最新版触控板驱动，修改了配置文件，现驱动正常**
-
-
-目前已更换`opencore`引导,版本号0.5.7，支持10.15.4
 
 **`config.plist`中的个人的机器三码信息已删除，需要自己生成后填入**
 
 **将机型改为14,1，雷电转HDMI正常，感谢[@hx2nn](https://github.com/hx2nn)**
 
-声卡和雷电转HDMI需要等待BIOS更新，官方论坛已经发起了有关外放和雷电的需求调研，希望大家可以去投票[链接地址](https://club.lenovo.com.cn/thread-5672284-1-1.html)
+~~声卡和雷电转HDMI需要等待BIOS更新，官方论坛已经发起了有关外放和雷电的需求调研，希望大家可以去投票[链接地址](https://club.lenovo.com.cn/thread-5672284-1-1.html)~~
 
 
 * 按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的DW1820A蓝牙教程添加驱动
 * 添加了4k显示补丁，显存2048M，原生HiDPI显示
-* 去除了多余的驱动和patch
 * 加入了DW1820a的device property驱动，可以支持apple watch自动解锁 
 * 添加了屏蔽PM981a的patch
-* 添加了雷电接口补丁，type-c扩展坞以太网卡工作正常
 
 **配置** 
 * 主板 HM370
@@ -28,11 +36,6 @@
 * 分辨率：4K
 * 硬盘：PM981a（黑苹果无解，自行添加了东芝RC500）
 * 网卡:intel AX200(黑苹果无解，已更换DW1820A) 
-
-
-
-
-
 
 前期准备
 ---
