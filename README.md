@@ -4,7 +4,7 @@
 
 目前已更新10.15.5，`opencore`引导版本号0.5.7
 
-CFG LOCK已解锁，本人配置CFG LOCKCFG Lock的offset为0x3E,需要修改SaSetup和CPUSetup中对应值，改完后Hackintool显示CFG Lock已解锁。
+CFG Lock已解锁，本人配置CFG Lock的offset为0x3E,需要修改SaSetup和CPUSetup中对应值，改完后Hackintool显示CFG Lock已解锁。
 
 可按照[此教程进行操作](http://bbs.pcbeta.com/viewthread-1845189-1-1.html)
 
