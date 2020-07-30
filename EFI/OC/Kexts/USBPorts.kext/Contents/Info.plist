@@ -55,7 +55,7 @@
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>3</integer>
 						<key>name</key>
 						<string>HS01</string>
 						<key>port</key>
@@ -77,7 +77,7 @@
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>9</integer>
 						<key>name</key>
 						<string>HS03</string>
 						<key>port</key>
@@ -99,7 +99,7 @@
 					<key>HS05</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>9</integer>
 						<key>name</key>
 						<string>HS05</string>
 						<key>port</key>
@@ -167,14 +167,14 @@
 			<key>model</key>
 			<string>MacBookPro14,1</string>
 		</dict>
-		<key>MacBookPro14,1-XHC-8086_15ec</key>
+		<key>MacBookPro14,1-XHC3</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
 			<key>IONameMatch</key>
-			<string>XHC</string>
+			<string>XHC3</string>
 			<key>IOPCIPrimaryMatch</key>
 			<string>0x15ec8086</string>
 			<key>IOProbeScore</key>
@@ -197,23 +197,23 @@
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>SS03</key>
+					<key>SSP1</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>name</key>
-						<string>SS03</string>
+						<string>SSP1</string>
 						<key>port</key>
 						<data>
 						AwAAAA==
 						</data>
 					</dict>
-					<key>SS04</key>
+					<key>SSP2</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>name</key>
-						<string>SS04</string>
+						<string>SSP2</string>
 						<key>port</key>
 						<data>
 						BAAAAA==
