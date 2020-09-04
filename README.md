@@ -3,6 +3,7 @@
 **Y9000X hackintosh 黑苹果 EFI**
 ---
 更新记录
+* 移除了csr-active-config参数，此参数导致SIP状态为unknown，改为在恢复模式中通过命令``csrutil disable`` 关闭SIP。
 * 更新oc至0.6.0，更新了驱动
 * 更新oc至0.5.9，更新了一些驱动，由于高分屏文字引导模式效果比较差，所以使用了官方的图形化引导界面
 * 修正了蓝牙驱动配置，此前升级了驱动文件，遗漏了config.plist中的配置

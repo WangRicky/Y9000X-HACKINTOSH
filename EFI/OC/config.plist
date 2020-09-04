@@ -1261,8 +1261,6 @@
 			<dict>
 				<key>boot-args</key>
 				<string>keepsyms=1 debug=0x100 -no_compat_check slide=1 brcmfx-country=#a</string>
-				<key>csr-active-config</key>
-				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 				<key>SystemAudioVolume</key>
