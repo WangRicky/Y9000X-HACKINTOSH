@@ -1260,7 +1260,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 -no_compat_check slide=1 brcmfx-country=#a</string>
+				<string>keepsyms=1 debug=0x100 -no_compat_check slide=1 brcmfx-country=#a igfxagdc=0</string>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 				<key>SystemAudioVolume</key>
@@ -1333,7 +1333,7 @@
 			<key>ROM</key>
 			<data>AAAAAAAA</data>
 			<key>SystemProductName</key>
-			<string>MacBookPro14,1</string>
+			<string>MacBookPro16,4</string>
 			<key>SystemSerialNumber</key>
 			<string></string>
 		</dict>

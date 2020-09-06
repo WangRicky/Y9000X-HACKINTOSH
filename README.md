@@ -3,6 +3,7 @@
 **Y9000X hackintosh 黑苹果 EFI**
 ---
 更新记录
+* 更改机型为16,4，已获得更合适的机型模拟电源策略（长期测试发现风扇会安静一些），新增启动参数``igfxagdc=0``，解决TYPE-C直连DP显示器，TYPE-C转HDMI显示器输出问题
 * 移除了csr-active-config参数，此参数导致SIP状态为unknown，改为在恢复模式中通过命令``csrutil disable`` 关闭SIP。
 * 更新oc至0.6.0，更新了驱动
 * 更新oc至0.5.9，更新了一些驱动，由于高分屏文字引导模式效果比较差，所以使用了官方的图形化引导界面
@@ -69,5 +70,7 @@ CFG Lock 已解锁，本人配置CFG Lock的offset为0x3E,需要修改SaSetup和
 **扬声器**
 
 * 音频尝试了自制Applealc驱动，扬声器节点为0x17，路径为0x02>0x17，均确认无误，编译的applealc正常驱动，外放无声，网友反馈此机型除Windows外，Linux、macOS系统扬声器均无法正常工作。
+---
+<img src="https://i.loli.net/2020/09/06/kVi3MrZCbp6ABjX.jpg" height="180"/>
 
 
