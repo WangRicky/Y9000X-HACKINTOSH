@@ -74,3 +74,11 @@ CFG Lock 已解锁，本人配置CFG Lock的offset为0x3E,需要修改SaSetup和
 <img src="https://i.loli.net/2020/09/06/kVi3MrZCbp6ABjX.jpg" height="180"/>
 
 
+**感谢每一位赞赏的朋友**
+
+| 昵称 | 时间                  |
+|----|---------------------|
+| VT | 2020-09-10 21:05:26 |
+
+
+
