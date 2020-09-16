@@ -4,11 +4,13 @@
 
 ---
 **由于目前的机型为16,4，可能导致安装时出现低版本的系统无法正常安装的问题，请使用10.15.6镜像安装。**
+
 ~~实践证明，此款笔记本无法安装双面颗粒的SSD，升级SSD的朋友们选购时需注意~~
 安装双面SSD时，需取下原本SSD下面的一个黑色橡胶块，双面胶很牢固，需小心操作
 
 ---
 更新记录
+* 更新OC版本为0.6.1，同步更新了驱动
 * 更改机型为16,4（**请注意，这是更符合i7版本的机型，其他CPU型号使用前请自行判断风险**），以获得更合适的机型模拟电源策略（长期测试发现风扇会安静一些），**更改机型的同时请注意USB定制，本次更新同时更新了USBPort.kext**。新增启动参数``igfxagdc=0``，解决TYPE-C直连DP显示器，TYPE-C转HDMI显示器输出问题
 * 移除了csr-active-config参数，此参数导致SIP状态为unknown，改为在恢复模式中通过命令``csrutil disable`` 关闭SIP。
 * 更新oc至0.6.0，更新了驱动
@@ -19,8 +21,7 @@
 * 将机型改为14,1，雷电转HDMI正常，感谢[@hx2nn](https://github.com/hx2nn)
 * 添加了屏蔽PM981a的patch
 ---
-**`config.plist`中的个人的机器三码信息已删除，需要自己生成后填入**
-目前已更新10.15.5，`opencore`引导版本号0.5.7
+**`config.plist`中的个人的机器三码信息已删除，需要自己生成后填入，网友反馈，三码如果不填，会导致开机后屏幕亮度很低的情况**
 
 CFG Lock 已解锁，本人配置CFG Lock的offset为0x3E,需要修改SaSetup和CPUSetup中对应值，改完后Hackintool显示CFG Lock已解锁。
 
@@ -75,7 +76,7 @@ CFG Lock 已解锁，本人配置CFG Lock的offset为0x3E,需要修改SaSetup和
 
 **扬声器**
 
-* 音频尝试了自制Applealc驱动，扬声器节点为0x17，路径为0x02>0x17，均确认无误，编译的applealc正常驱动，外放无声，网友反馈此机型除Windows外，Linux、macOS系统扬声器均无法正常工作。
+* 扬声器问题目前处于无解状态，Y9000X的功放经过了放大器，此设备目前无驱动。
 ---
 <img src="https://i.loli.net/2020/09/06/kVi3MrZCbp6ABjX.jpg" height="180"/>
 
