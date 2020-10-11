@@ -64,17 +64,17 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-TPAD</string>
+				<string>SSDT-TPXX</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
-				<string>SSDT-TPAD.aml</string>
+				<string>SSDT-TPXX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>SSDT-GPI0.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-GPI0.aml</string>
 			</dict>
