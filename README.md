@@ -23,7 +23,7 @@
 
 **由于目前的机型为16,4，可能导致安装时出现低版本的系统无法正常安装的问题，请使用10.15.6镜像安装。**
 
-* pm981a无法安装黑苹果，所以必须更换或增加硬盘，**安装双面SSD时，需取下原本SSD下面的一个黑色橡胶块，双面胶很牢固，需小心操作**。由于有pm981a存在，系统在访问pm981a硬盘文件时会导致死机重启。必须拆下三星的这块硬盘或者屏蔽这块硬盘。本efi默认屏蔽这块硬盘且pm981在第一硬盘位，如果你选择直接拆下这块硬盘，请删除efi/clover/acpi/patched/SSDT-DNVMe.aml文件 。
+* pm981a无法安装黑苹果，所以必须更换或增加硬盘，**安装双面SSD时，需取下原本SSD下面的一个黑色橡胶块，双面胶很牢固，需小心操作**。由于有pm981a存在，系统在访问pm981a硬盘文件时会导致死机重启。必须拆下三星的这块硬盘或者屏蔽这块硬盘。本efi默认屏蔽这块硬盘且pm981在第一硬盘位，如果你选择直接拆下这块硬盘，请删除efi/clover/acpi/patched/SSDT-DNVMe.aml文件，oc对应路径为`EFI/OC/ACPI/SSDT-DNVMe.aml`。
 * 如使用其他网卡（自带AX200等），可删除DeviceProperties-->PciRoot(0x0)/Pci(0x1d,0x5)/Pci(0x0,0x0)节点，并将以下博通网卡和蓝牙的kext：`AirportBrcmFixup.kext`,`BrcmBluetoothInjector.kext`,`BrcmFirmwareData.kext`,`BrcmPatchRAM3.kext`的`Enabled`属性改为`False`，intel网卡的驱动可以使用[这个仓库](https://github.com/OpenIntelWireless/itlwm)
 * 目前的config.plist是按照CFG LOCK解锁后配置的，如未解锁，请设置`AppleCpuPmCfgLock`和`AppleXcpmCfgLock`为true，本人配置CFG Lock的offset为0x3E,需要修改SaSetup和CPUSetup中对应值，改完后Hackintool显示CFG Lock已解锁，可按照[此教程进行操作](http://bbs.pcbeta.com/viewthread-1845189-1-1.html)， **修改BIOS ROM有风险，请谨慎操作**
 * 1080p版本可以删除DeviceProperties-->PciRoot(0x0)/Pci(0x2,0x0)节点
