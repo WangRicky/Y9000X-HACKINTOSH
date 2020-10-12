@@ -28,7 +28,6 @@
 * 目前的config.plist是按照CFG LOCK解锁后配置的，如未解锁，请设置`AppleCpuPmCfgLock`和`AppleXcpmCfgLock`为true，本人配置CFG Lock的offset为0x3E,需要修改SaSetup和CPUSetup中对应值，改完后Hackintool显示CFG Lock已解锁，可按照[此教程进行操作](http://bbs.pcbeta.com/viewthread-1845189-1-1.html)， **修改BIOS ROM有风险，请谨慎操作**
 * 1080p版本可以删除DeviceProperties-->PciRoot(0x0)/Pci(0x2,0x0)节点
 * **`config.plist`中的个人的机器三码信息已删除，需要自己生成后填入，网友反馈，三码如果不填，会导致开机后屏幕亮度很低的情况**
----
 # 本EFI特色
 * 基于本机原始DSDT制作了触控板热补丁，实现GPIO中断工作模式，采用预置变量法禁用原生备，无需重命名
 * 使用重命名EC方式，笔记本更适合重命名而非仿冒EC控制器
@@ -37,7 +36,6 @@
 * 屏蔽PM981a，防止访问pm981a导致的系统不稳定
 * 移除了csr-active-config参数，此参数导致SIP状态为unknown，如需关闭SIP,可在恢复模式中通过命令``csrutil disable`` 关闭。
 * 声卡加入延迟启动参数`alc-delay`,启动后声卡不加载的情况大幅度降低
----
 # 工作
 
 * 4k显示，背光调节正常 
