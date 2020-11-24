@@ -6,7 +6,8 @@
 目前big sur存在不少软件或驱动上的问题，暂时不打算上车，其中4k笔记本的内屏，无法4k@60hz点亮最为致命，想尝鲜的朋友可以根据[这个教程](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1866466)操作。
 ---
 主要更新记录
-* 常规更新，oc0.6.3,kext更新
+* 解决了外接显示器音频输出问题，感谢[laoxiajiadeyun](https://github.com/laoxiajiadeyun)
+* 使用`SSDT-PNLF-CFL.aml`来兼容10代CPU，感谢[EugeneSnikhovskiy](https://github.com/EugeneSnikhovskiy)，[carsonlius](https://github.com/carsonlius)。
 * 新增了读卡器驱动
 * 新增了触控板热补丁，基于本机原始DSDT制作，实现GPIO中断工作模式，采用预制变量法禁用原生备，无需重命名。
 * 更改机型为16,4（**请注意，这是更符合i7版本的机型，其他CPU型号使用前请自行判断风险**），以获得更合适的机型模拟电源策略（长期测试发现风扇会安静一些），**更改机型的同时请注意USB定制，本次更新同时更新了USBPort.kext**。新增启动参数``igfxagdc=0``，解决TYPE-C直连DP显示器，TYPE-C转HDMI显示器输出问题
@@ -37,6 +38,7 @@
 * 1080p版本可以删除DeviceProperties-->PciRoot(0x0)/Pci(0x2,0x0)节点
 * **`config.plist`中的个人的机器三码信息已删除，需要自己生成后填入，网友反馈，三码如果不填，会导致开机后屏幕亮度很低的情况**
 # 本EFI特色
+* 兼容了10代CPU集显
 * 基于本机原始DSDT制作了触控板热补丁，实现GPIO中断工作模式，采用预置变量法禁用原生备，无需重命名
 * 使用重命名EC方式，笔记本更适合重命名而非仿冒EC控制器
 * 按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的DW1820A蓝牙教程添加驱动，加入了DW1820a的device property驱动，可以支持apple watch自动解锁
@@ -53,6 +55,7 @@
 * 电源管理，USB接口正常
 * 读卡器
 * type-c接口可以正常接U盘，接type-c扩展坞以太网卡、HDMI，DP工作正常
+* 外接显示器音频输出正常
 
 感谢[@hx2nn](https://github.com/hx2nn)，最初TYPE-C转HDMI没有驱动时，提供了14,1机型解决了问题。
 
