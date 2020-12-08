@@ -6,6 +6,7 @@
 目前big sur存在不少软件或驱动上的问题，暂时不打算上车，其中4k笔记本的内屏，无法4k@60hz点亮最为致命，想尝鲜的朋友可以根据[这个教程](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1866466)操作。
 ---
 主要更新记录
+* 更新opencore版本为0.6.4，更新先关驱动
 * 解决了外接显示器音频输出问题，感谢[laoxiajiadeyun](https://github.com/laoxiajiadeyun)
 * 使用`SSDT-PNLF-CFL.aml`来兼容10代CPU，感谢[EugeneSnikhovskiy](https://github.com/EugeneSnikhovskiy)，[carsonlius](https://github.com/carsonlius)。
 * 新增了读卡器驱动
