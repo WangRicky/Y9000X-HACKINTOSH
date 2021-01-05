@@ -4,8 +4,8 @@
 
 ---
 主要更新记录
+* 更新opencore版本为0.6.5，更新驱动
 * 升级big sur，支持内屏4k@60
-* 更新opencore版本为0.6.4，更新驱动
 * 解决了外接显示器音频输出问题，感谢[laoxiajiadeyun](https://github.com/laoxiajiadeyun)
 * 使用`SSDT-PNLF-CFL.aml`来兼容10代CPU，感谢[EugeneSnikhovskiy](https://github.com/EugeneSnikhovskiy)，[carsonlius](https://github.com/carsonlius)。
 * 新增了读卡器驱动
