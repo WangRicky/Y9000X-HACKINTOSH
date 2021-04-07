@@ -4,7 +4,7 @@
 
 ---
 主要更新记录
-* 更新opencore版本为0.6.7，更新驱动
+* 更新opencore版本为0.6.8，更新驱动
 * 升级big sur，支持内屏4k@60
 * 解决了外接显示器音频输出问题，感谢[laoxiajiadeyun](https://github.com/laoxiajiadeyun)
 * 使用`SSDT-PNLF-CFL.aml`来兼容10代CPU，感谢[EugeneSnikhovskiy](https://github.com/EugeneSnikhovskiy)，[carsonlius](https://github.com/carsonlius)。
@@ -43,7 +43,7 @@
 * 按照[黑果小兵](https://blog.daliansky.net/DW1820A_BCM94350ZAE-driver-inserts-the-correct-posture.html)的DW1820A蓝牙教程添加驱动，加入了DW1820a的device property驱动，可以支持apple watch自动解锁
 * 添加了4k显示补丁，显存2048M，原生HiDPI显示
 * 屏蔽PM981a，防止访问pm981a导致的系统不稳定
-* 移除了csr-active-config参数，此参数导致SIP状态为unknown，如需关闭SIP,可在恢复模式中通过命令``csrutil disable`` 关闭。
+* ~~移除了csr-active-config参数，此参数导致SIP状态为unknown，如需关闭SIP,可在恢复模式中通过命令``csrutil disable`` 关闭~~,SIP全关闭会导致无法检测到OTA更新，已恢复此参数。
 * 声卡加入延迟启动参数`alc-delay`,启动后声卡不加载的情况大幅度降低
 # 工作
 
@@ -67,7 +67,7 @@
 **扬声器**
 ~~官方论坛已经发起了有关外放和雷电的需求调研，希望大家可以去投票[链接地址](https://club.lenovo.com.cn/thread-5672284-1-1.html)~~
 
-* 扬声器问题目前处于无解状态，Y9000X的功放经过了放大器，此设备目前无驱动。
+* 扬声器问题目前处于无解状态，Y9000X的功放经过了放大器，此设备目前无驱动，并且此设备挂在在INTEL智音下，基本处于无解状态，等外放的朋友可以死心了，有生之年系列。
 ---
 <img src="https://i.loli.net/2020/09/06/kVi3MrZCbp6ABjX.jpg" height="180"/>
 
