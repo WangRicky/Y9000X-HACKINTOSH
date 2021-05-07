@@ -403,12 +403,12 @@
 				<data>cKEAAA==</data>
 				<key>device_type</key>
 				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
 				<key>layout-id</key>
 				<integer>31</integer>
 				<key>model</key>
 				<string>Sunrise Point-LP HD Audio</string>
+				<key>No-hda-gfx</key>
+				<data>AAAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
