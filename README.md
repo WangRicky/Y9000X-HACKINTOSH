@@ -4,7 +4,7 @@
 
 ---
 主要更新记录
-* 更新opencore版本为0.6.8，更新驱动
+* [Sulisong](https://github.com/WangRicky/Y9000X-HACKINTOSH/pull/73)提供了一种睡眠唤醒死机的解决方案，但会牺牲HDMI音频功能，大家自行选择
 * 升级big sur，支持内屏4k@60
 * 解决了外接显示器音频输出问题，感谢[laoxiajiadeyun](https://github.com/laoxiajiadeyun)
 * 使用`SSDT-PNLF-CFL.aml`来兼容10代CPU，感谢[EugeneSnikhovskiy](https://github.com/EugeneSnikhovskiy)，[carsonlius](https://github.com/carsonlius)。
