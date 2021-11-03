@@ -4,7 +4,7 @@
 
 ---
 主要更新记录
-* 更新OC版本为0.7.5，**未使用12系统的蓝牙补丁，如需升级12系统，自行替换蓝牙补丁**
+* 更新OC版本为0.7.5，支持Big Sur & Monterey
 * [Sulisong](https://github.com/WangRicky/Y9000X-HACKINTOSH/pull/73)提供了一种睡眠唤醒死机的解决方案，但会牺牲HDMI音频功能，大家自行选择
 * 升级big sur，支持内屏4k@60
 * 解决了外接显示器音频输出问题，感谢[laoxiajiadeyun](https://github.com/laoxiajiadeyun)
