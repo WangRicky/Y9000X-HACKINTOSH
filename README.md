@@ -4,6 +4,10 @@
 
 ---
 主要更新记录
+* 安装 ALCPlugFix-Swift 来修复扬声器切换异常问题, 终端使用以下命安装或卸载 ALCPlugFix
+```
+  bash -c "$(curl -fsSL https://gitee.com/YasuStudio/fix-speaker-y9000x/raw/master/FixSpeaker-Y9000X.sh)"
+```
 * 更新OC版本为0.7.5，支持Big Sur & Monterey
 * [Sulisong](https://github.com/WangRicky/Y9000X-HACKINTOSH/pull/73)提供了一种睡眠唤醒死机的解决方案，但会牺牲HDMI音频功能，大家自行选择
 * 升级big sur，支持内屏4k@60

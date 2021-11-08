@@ -410,7 +410,7 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<integer>31</integer>
+				<integer>66</integer>
 				<key>model</key>
 				<string>Sunrise Point-LP HD Audio</string>
 			</dict>
@@ -1218,7 +1218,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 -no_compat_check slide=1 igfxagdc=0 brcmfx-country=HK -v</string>
+				<string>keepsyms=1 debug=0x100 -no_compat_check slide=1 igfxagdc=0 brcmfx-country=HK alcverbs=1</string>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 				<key>SystemAudioVolume</key>
