@@ -8,7 +8,7 @@
 ```
   bash -c "$(curl -fsSL https://gitee.com/YasuStudio/fix-speaker-y9000x/raw/master/FixSpeaker-Y9000X.sh)"
 ```
-* 更新OC版本为0.7.5，支持Big Sur & Monterey
+* 更新OC版本为0.7.5，支持Big Sur & Monterey,注意，DW1820A蓝牙固件上传在12系统有问题，暂时无法解决，可通过先进Windows，在重启进入Hackintosh的方式暂时解决
 * [Sulisong](https://github.com/WangRicky/Y9000X-HACKINTOSH/pull/73)提供了一种睡眠唤醒死机的解决方案，但会牺牲HDMI音频功能，大家自行选择
 * 升级big sur，支持内屏4k@60
 * 解决了外接显示器音频输出问题，感谢[laoxiajiadeyun](https://github.com/laoxiajiadeyun)
